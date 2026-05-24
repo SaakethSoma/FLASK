@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block title%}Home Page{%endblock%}
+
+
+{%block content%}
+
+<img src="{{url_for('static',filename='images/'+result)}}" alt="" width="200px" height="150px">
+  
+<h1 style="color:pink">Welcome to Home Page</h1>
+
+{%endblock%}

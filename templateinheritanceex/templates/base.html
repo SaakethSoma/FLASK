@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}MY Website{%endblock%}</title>
+    <!-- <link rel="stylesheet" href="static/style.css"> -->
+
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Flask Website</h1>
+        <nav>
+            <a href="/">Home</a>|<a href="/about">About</a>|<a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    {%block content%}
+    <!-- this is filled by child templates -->
+
+    {%endblock%}
+
+
+
+    <footer>
+        <p>Copyright @2026 alrights are reserved developed this website with LOVE ❤️❤️❤️❤️</p>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
