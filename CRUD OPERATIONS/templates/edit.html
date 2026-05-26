@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <form action="/api/students/{{ student[0] }}" method="POST">
+        <input type="number" name="id" value="{{student[0]}}" id="" readonly> <br><br>
+        <input type="text" name="name" value="{{student[1]}}" id="" placeholder="Enter name" required> <br><br>
+        <input type="email" name="email" value="{{student[2]}}" id="" placeholder="enter email" required><br><br>
+        <input type="text" name="course" value="{{student[3]}}" id="" placeholder="enter course" required> <br><br>
+        <input type="number" name="phone" value="{{student[4]}}" id="" placeholder="Enter phone" required> <br><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

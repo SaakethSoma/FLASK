@@ -14,7 +14,7 @@ con=mysql.connector.connect(
 #route for connection testing
 @app.route('/')
 def Home():
-    return "Database is successfully connected !!!"
+    return render_template('register.html')
 
 # route for  fetch data from database 
 @app.route('/getstudents',methods=['GET'])
